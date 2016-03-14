@@ -13,4 +13,4 @@ prompt.get(['title', 'post'], function (err, result) {
   console.log(newJournal.date.format("MMM Do YY"));
   console.log(newJournal.body);
   console.log(newJournal.wordCount());
-})
+});
