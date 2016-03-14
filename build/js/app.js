@@ -9,7 +9,7 @@ $(document).ready(function(){
    var now = moment();
    var newJournal = new Journal(inputTitle, inputBody, now);
    $('#output').append("<h3>" + newJournal.title + "</h3>");
-   $('#output').append("<p>" + now.format("MMM Do YY") + "</p>");
+   $('#output').append("<p>" + newJournal.date.format("MMM Do YY") + "</p>");
    $('#output').append("<p>" + newJournal.body + "</p>");
    $('#output').append("<p>" + newJournal.wordCount() + "</p>");
  });
